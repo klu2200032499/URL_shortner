@@ -1,3 +1,93 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+  <h1>🔗 URL Shortener</h1>
+  <p>A simple and fast URL shortening service built with <strong>Node.js</strong>, <strong>Express</strong>, and <strong>MongoDB</strong>.</p>
+
+  <h2>🚀 Features</h2>
+  <ul>
+    <li>Shorten any valid long URL</li>
+    <li>Unique short codes generated using <code>shortid</code></li>
+    <li>Redirect users to original URLs</li>
+    <li>Easy REST API interface</li>
+    <li>Powered by MongoDB and Mongoose</li>
+  </ul>
+
+  <h2>📁 Project Structure</h2>
+  <pre>
+URL_shortener/
+├── models/
+│   └── Url.js
+├── server.js
+├── package.json
+└── package-lock.json
+  </pre>
+
+  <h2>🧪 Getting Started</h2>
+  <ol>
+    <li><strong>Clone the repository:</strong>
+      <pre><code>git clone https://github.com/yourusername/URL_shortener.git
+cd URL_shortener</code></pre>
+    </li>
+    <li><strong>Install dependencies:</strong>
+      <pre><code>npm install</code></pre>
+    </li>
+    <li><strong>Start MongoDB:</strong> Ensure it's running locally on default port.</li>
+    <li><strong>Run the server:</strong>
+      <pre><code>npm start</code></pre>
+      Access it at <code>http://localhost:3000</code>
+    </li>
+  </ol>
+
+  <h2>🔧 API Endpoints</h2>
+  <h3>POST /shorten</h3>
+  <p>Create a shortened URL</p>
+  <p><strong>Request Body:</strong></p>
+  <pre><code>{
+  "longUrl": "https://example.com"
+}</code></pre>
+
+  <p><strong>Response:</strong></p>
+  <pre><code>{
+  "shortUrl": "http://localhost:3000/abc123"
+}</code></pre>
+
+  <h3>GET /:shortCode</h3>
+  <p>Redirects to the original long URL</p>
+
+  <h2>📦 Example</h2>
+  <pre><code>curl -X POST http://localhost:3000/shorten \
+  -H "Content-Type: application/json" \
+  -d '{"longUrl":"https://www.google.com"}'</code></pre>
+
+  <p>Then open <code>http://localhost:3000/&lt;shortCode&gt;</code> in your browser.</p>
+
+  <h2>🧰 Built With</h2>
+  <ul>
+    <li><a href="https://nodejs.org/">Node.js</a></li>
+    <li><a href="https://expressjs.com/">Express</a></li>
+    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
+    <li><a href="https://mongoosejs.com/">Mongoose</a></li>
+    <li><a href="https://www.npmjs.com/package/shortid">shortid</a></li>
+  </ul>
+  <h2>🙋‍♀️ Author</h2>
+  <ul>
+    <li>GitHub: <a href="https://github.com/klu2200032499">@klu2200032499</a></li>
+    <li>Project: <a href="https://github.com/klu2200032499/URL_shortner">URL_shortner</a></li>
+  </ul>
+
+</body>
+</html>
+
+
+# Starter Guide for Creating React app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
